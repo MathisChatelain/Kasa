@@ -1,14 +1,16 @@
 import logo from 'static/logo.svg';
 import 'css/Global.css'
 import 'css/Room.css';
+import { useParams } from "react-router-dom"
 
 function Room() {
+  const { roomId } = useParams()
   return (
     <div className="Room">
       <header className="Room-header">
         <img src={logo} className="Room-logo" alt="logo" />
         <p>
-          Edit <code>src/Room.js</code> and save to reload.
+          Edit <code>src/Room.js == {roomId}</code> and save to reload.
         </p>
         <a
           className="Room-link"

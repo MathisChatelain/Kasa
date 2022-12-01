@@ -1,0 +1,32 @@
+.Footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: var(--colors-black);
+    width: 100%;
+    height: 209px;
+}
+
+.FooterLogo {
+    filter: brightness(0) invert(1);
+    margin-top: 66px;
+    height: 36px;
+}
+
+.FooterText {
+    color: var(--colors-white);
+    font-size: 24px;
+}
+
+@media screen and (max-width: 769px) {
+    .FooterText {
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .FooterText {
+        font-size: 12px;
+    }
+}

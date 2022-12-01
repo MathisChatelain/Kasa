@@ -30,7 +30,7 @@ rootElement.render(
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<About />} />
-      <Route path="/room/:id" element={<Room />} />
+      <Route path="/room/:roomId" element={<Room />} />
       <Route path="*" element={<Page404 />} />
     </Routes>
     <Footer />
