@@ -11,3 +11,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+:root {
+  /* Color palette for kasa */
+  --colors-main: #FF6060;
+  --colors-white: #E5E5E5;
+  --colors-gray: #F6F6F6;
+  --colors-black: rgb(21, 21, 21);
+}

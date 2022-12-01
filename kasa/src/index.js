@@ -5,15 +5,21 @@ import {
   Routes,
   Route
 } from "react-router-dom";
-import './index.css';
-import Home from './pages';
-import reportWebVitals from './reportWebVitals';
+import 'index.css';
+import Home from 'pages/Home';
+import Page404 from 'pages/Page404';
+import Room from 'pages/Room';
+import About from 'pages/About';
+import reportWebVitals from 'reportWebVitals';
 
 const rootElement = createRoot(document.getElementById("root"));
 rootElement.render(
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<Home />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/room" element={<Room />} />
+      <Route path="*" element={<Page404 />} />
     </Routes>
   </BrowserRouter>
 );
