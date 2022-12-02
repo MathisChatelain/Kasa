@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  background-color: var(--colors-white);
   font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -15,7 +16,7 @@ code {
 :root {
   /* Color palette for kasa */
   --colors-main: #FF6060;
-  --colors-white: #E5E5E5;
-  --colors-gray: #F6F6F6;
+  --colors-gray: #E5E5E5;
+  --colors-white: #F6F6F6;
   --colors-black: rgb(21, 21, 21);
 }

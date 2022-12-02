@@ -1,0 +1,26 @@
+.ThumbnailCard {
+    display: 'flex';
+    flex-direction: 'column';
+    justify-content: space-between;
+    background: rgb(255,96,96);
+    background: linear-gradient(180deg, rgba(255,96,96,1) 0%, rgba(255,96,96,1) 55%, rgba(176,67,67,1) 100%);
+    border-radius: 10px;
+    width: 340px;
+    height: 340px;
+    margin: 10px;
+    overflow: hidden;
+}
+
+.ThumbnailCard > img {
+    height: 268px;
+}
+
+.ThumbnailCard > p {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--colors-white);
+    text-decoration: none;
+}

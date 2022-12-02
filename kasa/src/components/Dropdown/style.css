@@ -1,0 +1,17 @@
+.DropdownBar {
+    background-color: var(--colors-main);
+}
+
+.DropdownBar > div {
+    width: 100%;
+}
+
+.DropdownContent {
+    background-color: var(--colors-gray);
+}
+
+.DropdownContent > p {
+    color: var(--colors-main);
+}
+
+.Dropdown

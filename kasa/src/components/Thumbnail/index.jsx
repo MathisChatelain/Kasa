@@ -1,9 +1,10 @@
-function Thumbnail({ label, title, picture }) {
-    return (
-        <div style={{ display: 'flex', flexDirection: 'column', padding: 15 }}>
-            <span>{label}</span>
-            <img src={picture} alt="freelance" height={80} width={80} />
-            <span>{title}</span>
+import "./style.css"
+
+function Thumbnail(props) {
+    return (   
+        <div className="ThumbnailCard">
+            <img src={props.room.cover} alt="illustration thumbnail"/>
+            <p>{props.room.title}</p>
         </div>
     )
 }
