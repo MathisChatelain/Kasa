@@ -1,5 +1,21 @@
 .DropdownBar {
     background-color: var(--colors-main);
+    display: flex;
+    height: 47px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 18px;
+}
+
+.DropdownBar > img {
+    height: 24px;
+}
+
+.DropdownBar > p {
+    color: var(--colors-white);
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 142.6%;
 }
 
 .DropdownBar > div {
@@ -8,10 +24,21 @@
 
 .DropdownContent {
     background-color: var(--colors-gray);
+    color: var(--colors-main);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 142.6%;
+    padding: 36px 18px 18px 18px;
 }
 
 .DropdownContent > p {
     color: var(--colors-main);
 }
 
-.Dropdown
+.DropdownCard {
+    width: 1024px;
+    overflow: hidden;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}

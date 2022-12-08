@@ -6,6 +6,10 @@
     background-color: var(--colors-black);
     width: 100%;
     height: 209px;
+    position:relative;
+    left:0;
+    bottom:0;
+    right:0;
 }
 
 .FooterLogo {

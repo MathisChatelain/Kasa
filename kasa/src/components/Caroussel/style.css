@@ -1,0 +1,37 @@
+.CarousselCard {
+    width: 100%;
+    border-radius: 25px;
+    overflow: hidden;
+    height: 415px;
+}
+
+.CarousselImg {
+    background-color: var(--colors-gray);
+    height: 100%;
+    width: 100%;
+}
+
+.CarousselArrowLeft {
+    position: relative;
+    top: calc(-50% - 40px);
+    height: 80px;
+    width: 47px;
+    left: 24px;
+}
+
+.CarousselArrowRight {
+    position: relative;
+    top: calc(-50% - 40px);
+    height: 80px;
+    width: 47px;
+    left: calc(100% - 120px);
+}
+
+.CarousselCounter {
+    position: relative;
+    top: -140px;
+    left: calc(50% - 12px);
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--colors-white);
+}

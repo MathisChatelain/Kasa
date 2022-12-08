@@ -1,28 +1,30 @@
 import "./style.css"
-import {ArrowUp} from "static/up-arrow.png"
-import {ArrowDown} from "static/down-arrow.png"
+import ArrowUp from "static/up-arrow.png"
+import ArrowDown from "static/down-arrow.png"
+import { useState } from "react"
 
 function Dropdown(props) {
-    if (props.isOpen) {
+    const [toggle, setToggle] = useState(false)
+    if (toggle) {
         return (   
-            <div className="DropdownCard" style={width=props.width}>
+            <div className="DropdownCard">
                 <div className="DropdownBar">
                     <p>{props.label}</p>
-                    <img src={ArrowUp} alt="arrow-up" />
+                    <img src={ArrowUp} alt="arrow-up" onClick={() => setToggle(!toggle)} />
                 </div>
                 <div className="DropdownContent">{props.content}</div>
             </div>
         )
-    } else {
-        return (   
-            <div className="DropdownCard" style={width=props.width}>
-                 <div className="DropdownBar">
-                    <p>{props.label}</p>
-                    <img src={ArrowDown} alt="arrow-up"/>
+        } else {
+            return (   
+                <div className="DropdownCard">
+                    <div className="DropdownBar">
+                        <p>{props.label}</p>
+                        <img src={ArrowDown} alt="arrow-up" onClick={() => setToggle(!toggle)} />
+                    </div>
                 </div>
-            </div>
-        )
+            )
+        }
     }
-}
  
 export default Dropdown

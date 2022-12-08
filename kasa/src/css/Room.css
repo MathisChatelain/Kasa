@@ -1,0 +1,48 @@
+.Room {
+    padding: 40px 100px 0px 100px;
+}
+  
+
+.RoomTitle {
+    font-weight: 500;
+    font-size: 36px;
+    color: var(--colors-main);
+}
+
+.RoomTagsList {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.RoomTag {
+    width: 100px;
+}
+
+.RoomCaroussel {
+    margin-bottom: 40px;
+}
+
+.RoomDropdownsDiv {
+    width: 100%;
+    display: flex;
+}
+
+.RoomDescription {
+    width: 50%;
+}
+
+.RoomEquipments {
+    width: 50%;
+}
+
+@media screen and (max-width: 769px) {
+    .Room {
+      padding: 20px 30px 0px 30px;
+    }
+  }
+  
+  @media screen and (max-width: 426px) {
+    .Room {
+      padding: 10px 15px 0px 15px;
+    }
+  }

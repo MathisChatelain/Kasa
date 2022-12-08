@@ -1,0 +1,32 @@
+.About {
+    padding: 40px 100px 0px 100px;
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.AboutIllustration {
+    width: 1240px;
+    height: 223px;
+    background: #000000;
+    background: rgba(0, 0, 0, .65) url("../static/kalen-emsley-Bkci_8qcdvQ-unsplash 2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    mix-blend-mode: darken;
+    border-radius: 25px;
+    overflow: hidden;
+    margin-bottom: 31px;
+}
+
+@media screen and (max-width: 769px) {
+    .About {
+      padding: 20px 30px 0px 30px;
+    }
+  }
+  
+@media screen and (max-width: 426px) {
+    .About {
+        padding: 10px 15px 0px 15px;
+    }
+}

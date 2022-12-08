@@ -1,24 +1,15 @@
-import logo from 'static/logo.svg';
 import 'css/Global.css'
 import 'css/Page404.css';
+import { Link } from "react-router-dom"
 
 function Page404() {
   return (
     <div className="Page404">
-      <header className="Page404-header">
-        <img src={logo} className="Page404-logo" alt="logo" />
-        <p>
-          Edit <code>src/Page404.js</code> and save to reload.
-        </p>
-        <a
-          className="Page404-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <p className='p404'>404</p>
+      <p className='Page404Text'>Oups! La page que vous demandez n'existe pas.</p>
+      <Link to="/">
+        <p className='Page404Link'>Retourner sur la page d'acceuil</p>
+      </Link>
     </div>
   );
 }
