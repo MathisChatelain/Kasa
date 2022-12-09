@@ -12,7 +12,6 @@
 
 .RoomTagsList {
     display: flex;
-    margin-bottom: 15px;
 }
 
 .RoomTag {
@@ -23,10 +22,39 @@
     margin-bottom: 40px;
 }
 
+.RoomInfos {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.HostName {
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--colors-main);
+    margin-right: 10px;
+}
+
+.HostPicture {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.HostDiv {
+    display: flex;
+    align-items: center;
+    width: 100px;
+    margin-right: 40px;
+}
+
 .RoomDropdownsDiv {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .DropdownCard {
@@ -36,10 +64,18 @@
     .Room {
       padding: 20px 30px 0px 30px;
     }
+
+    .DropdownCard {
+        width: 100% !important;
+    }
   }
   
   @media screen and (max-width: 426px) {
     .Room {
       padding: 10px 15px 0px 15px;
+    }
+
+    .DropdownCard {
+        width: 100% !important;
     }
   }

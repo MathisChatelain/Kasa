@@ -20,7 +20,7 @@
 }
 
 .HomeIllustrationText {
-  color: var(--colors-white);
+  color: var(--colors-main);
   font-size: 48px;
   text-decoration: none;
 }
@@ -39,6 +39,15 @@
   .Home {
     padding: 20px 30px 0px 30px;
   }
+
+  .HomeIllustrationText {
+    font-size: 24px;
+  }
+
+  .HomeGallery {
+    padding: 20px;
+  }
+
 }
 
 @media screen and (max-width: 426px) {

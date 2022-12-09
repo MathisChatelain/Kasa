@@ -17,7 +17,6 @@
     color: var(--colors-white);
     font-weight: 500;
     font-size: 24px;
-    line-height: 142.6%;
 }
 
 .DropdownBar > div {
@@ -30,9 +29,9 @@
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
-    line-height: 142.6%;
     padding: 36px 18px 18px 18px;
     width: 100%;
+    overflow-wrap: break-word;
 }
 
 .DropdownContent > p {

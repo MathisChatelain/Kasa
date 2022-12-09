@@ -6,7 +6,7 @@ import ArrowRight from "static/right-arrow.png"
 class Caroussel extends Component {
     constructor(props) {
         super(props);
-        this.pictures = props.pictures || props.room.pictures
+        this.pictures = props.room.pictures || [props.room.cover]
         this.state = {
             "currentIndex" : props.currentIndex || 0
         }
