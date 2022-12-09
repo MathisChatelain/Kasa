@@ -1,5 +1,6 @@
 .Room {
     padding: 40px 100px 0px 100px;
+    margin-bottom: 100px;
 }
   
 
@@ -25,16 +26,12 @@
 .RoomDropdownsDiv {
     width: 100%;
     display: flex;
+    justify-content: space-between;
 }
 
-.RoomDescription {
-    width: 50%;
+.DropdownCard {
+    width: calc(50% - 10px) !important;
 }
-
-.RoomEquipments {
-    width: 50%;
-}
-
 @media screen and (max-width: 769px) {
     .Room {
       padding: 20px 30px 0px 30px;
