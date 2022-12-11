@@ -27,12 +27,13 @@ function Room() {
     <div className="Room">
      <Caroussel className="RoomCaroussel" room={currentRoom} />
      <div style={{ display: "flex", justifyContent: "space-between"}}>
-     <p className='RoomTitle'>{ currentRoom.title}</p>
-     <div className='HostDiv'>
-        <p className="HostName">{currentRoom.host.name}</p>
-        <img className="HostPicture" src={currentRoom.host.picture} alt="host profile" />
-      </div>
+      <p className='RoomTitle'>{ currentRoom.title}</p>
+      <div className='HostDiv'>
+          <p className="HostName">{currentRoom.host.name}</p>
+          <img className="HostPicture" src={currentRoom.host.picture} alt="host profile" />
+        </div>
      </div>
+     <p className='RoomLocation'>{ currentRoom.location }</p>
       <div className='RoomInfos'>
         <div className='RoomTagsList'>{ tags }</div>
         <div style={{ display: "flex"}}>{ stars }</div>

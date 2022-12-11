@@ -22,9 +22,30 @@
 }
 
 .Page404Link {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
+    font-family: "Montserrat";
     font-size: 18px;
-    text-decoration-line: underline;
+    color: var(--colors-main);
+    text-decoration: none !important;
 }
+
+.Page404Link > a {
+    font-family: "Montserrat";
+}
+
+@media screen and (max-width: 426px) {
+    .Page404 {
+        text-align: center;
+        position: initial;
+        top: -200px;
+        height: 60vh;
+    }
+
+    .p404 {
+        font-size: 96px;
+        margin-bottom: 11px;
+    }
+
+    .Page404Text {
+        font-size: 18px;
+    }
+  }

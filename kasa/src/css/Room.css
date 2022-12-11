@@ -10,6 +10,14 @@
     color: var(--colors-main);
 }
 
+.RoomLocation {
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--colors-main);
+    position: relative;
+    top: -40px;
+}
+
 .RoomTagsList {
     display: flex;
 }
@@ -73,6 +81,11 @@
   @media screen and (max-width: 426px) {
     .Room {
       padding: 10px 15px 0px 15px;
+    }
+
+    .RoomLocation {
+        font-size: 14px;
+        top: 0px;
     }
 
     .DropdownCard {

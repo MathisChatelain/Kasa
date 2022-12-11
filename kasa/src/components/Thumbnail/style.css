@@ -21,6 +21,67 @@
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
-    color: var(--colors-white);
-    text-decoration: none;
+    color: var(--colors-white); 
 }
+
+.ThumbnailCard:any-link{
+    background-color: green;
+}
+
+@media screen and (max-width: 1025px) {
+    .ThumbnailCard {
+        width: 310px;
+        height: 310px;
+        margin: 10px;
+    }
+
+    .ThumbnailCard > img {
+        height: 238px;
+    }
+ }
+
+@media screen and (max-width: 769px) {
+    .ThumbnailCard {
+        width: 310px;
+        height: 310px;
+        margin: 10px;
+    }
+
+    .ThumbnailCard > img {
+        height: 238px;
+    }
+ }
+  
+@media screen and (max-width: 426px) {
+    .ThumbnailCard {
+        width: 340px;
+        height: 340px;
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .ThumbnailCard {
+        width: 300px;
+        height: 300px;
+        margin: 10px;
+    }
+
+    .ThumbnailCard > img {
+        height: 220px;
+    }
+}
+
+@media screen and (max-width: 321px) {
+    .ThumbnailCard {
+        width: 240px;
+        height: 240px;
+        margin: 10px;
+    }
+
+    .ThumbnailCard > img {
+        height: 168px;
+    }
+}
+
+

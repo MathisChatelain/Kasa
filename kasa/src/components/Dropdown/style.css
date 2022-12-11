@@ -30,7 +30,8 @@
     font-weight: 400;
     font-size: 24px;
     padding: 36px 18px 18px 18px;
-    width: 100%;
+    width: calc(100% - 36px);
+    border-right: solid var(--colors-gray) 20px;
     overflow-wrap: break-word;
 }
 

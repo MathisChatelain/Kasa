@@ -8,6 +8,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+a {
+  text-decoration: none !important;
+}
+
 code {
   font-family: 'Montserrat', source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

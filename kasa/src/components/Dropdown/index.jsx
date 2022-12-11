@@ -8,9 +8,9 @@ function Dropdown(props) {
     if (toggle) {
         return (   
             <div className="DropdownCard">
-                <div className="DropdownBar">
+                <div className="DropdownBar" onClick={() => setToggle(!toggle)}>
                     <p>{props.label}</p>
-                    <img src={ArrowUp} alt="arrow-up" onClick={() => setToggle(!toggle)} />
+                    <img src={ArrowUp} alt="arrow-up"  />
                 </div>
                 <div className="DropdownContent">{props.content}</div>
             </div>
@@ -18,9 +18,9 @@ function Dropdown(props) {
         } else {
             return (   
                 <div className="DropdownCard">
-                    <div className="DropdownBar">
+                    <div className="DropdownBar" onClick={() => setToggle(!toggle)} >
                         <p>{props.label}</p>
-                        <img src={ArrowDown} alt="arrow-up" onClick={() => setToggle(!toggle)} />
+                        <img src={ArrowDown} alt="arrow-up"/>
                     </div>
                 </div>
             )
