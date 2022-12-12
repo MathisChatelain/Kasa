@@ -1,30 +1,46 @@
 import "./style.css"
 import ArrowUp from "static/up-arrow.png"
 import ArrowDown from "static/down-arrow.png"
-import { useState } from "react"
+import { Component } from "react"
 
-function Dropdown(props) {
-    const [toggle, setToggle] = useState(false)
-    if (toggle) {
+class Dropdown extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            "toggle": false
+        }
+    };
+    
+
+    currentArrow(){
+        if (this.state.toggle) {
+            return <img src={ArrowUp} alt="arrow-up"  />
+        } else { 
+            return <img src={ArrowDown} alt="arrow-down"/> 
+        }
+    };
+
+    dropdownContent() {
+        if (this.state.toggle) {
+            return <div className="DropdownContent">{this.props.content}</div>
+        }
+    };
+
+    setToggle(value) {
+        this.setState({"toggle" : !value})
+    }
+
+    render() {
         return (   
             <div className="DropdownCard">
-                <div className="DropdownBar" onClick={() => setToggle(!toggle)}>
-                    <p>{props.label}</p>
-                    <img src={ArrowUp} alt="arrow-up"  />
+                <div className="DropdownBar" onClick={() => this.setToggle(this.state.toggle)}>
+                    <p>{this.props.label}</p>
+                    {this.currentArrow()}
                 </div>
-                <div className="DropdownContent">{props.content}</div>
+                { this.dropdownContent() }
             </div>
-        )
-        } else {
-            return (   
-                <div className="DropdownCard">
-                    <div className="DropdownBar" onClick={() => setToggle(!toggle)} >
-                        <p>{props.label}</p>
-                        <img src={ArrowDown} alt="arrow-up"/>
-                    </div>
-                </div>
             )
-        }
+        } 
     }
  
 export default Dropdown

@@ -1,19 +1,34 @@
 import 'css/Global.css'
 import Star from "static/star.png"
-import { useParams } from "react-router-dom"
+import { useParams, useNavigate } from "react-router-dom"
 import MockDB from "data.json"
+import BaseRoom from "baseroom.json"
 import Dropdown from "components/Dropdown"
 import Tag from "components/Tag"
 import Caroussel from 'components/Caroussel';
 import 'css/Room.css';
+import { useEffect } from 'react'
 
 function Room() {
+  
   const { roomId } = useParams()
-  const currentRoom = MockDB.filter(room => room["id"] === roomId)[0] || {}
+  const navigate = useNavigate()
+
+  const filteredRooms = MockDB.filter(room => room["id"] === roomId)
+  useEffect(() => {
+    if (filteredRooms.length === 0){
+      navigate(`/`)
+    }
+  });
+  
+  const currentRoom = filteredRooms[0] || BaseRoom
+  
   const equipmentsAsContent = currentRoom.equipments.map(
     (equipment) => <p className='RoomEquipmentsText'>{equipment}</p>
   ) 
+  
   const tags = currentRoom.tags.map((e) => <Tag key={e} className="RoomTag" text={e}/>)
+  
   const stars = []
   for (var index = 1; index<=5; index++) {
     if (index <= currentRoom.rating) {
