@@ -68,6 +68,7 @@
 .DropdownCard {
     width: calc(50% - 10px) !important;
 }
+
 @media screen and (max-width: 769px) {
     .Room {
       padding: 20px 30px 0px 30px;
@@ -85,10 +86,53 @@
 
     .RoomLocation {
         font-size: 14px;
-        top: 0px;
+        top: -40px;
     }
 
     .DropdownCard {
         width: 100% !important;
+    }
+
+    .RoomTitle {
+        font-size: 18px;
+        width: 400px;
+    }
+
+    .HostDiv {
+        position:relative;
+        top: 150px;
+    }
+
+    .RoomInfos {
+        position: relative;
+        top: -20px;
+        margin-bottom: 50px;
+    }
+
+    .RoomStars {
+        width: 15px !important;
+        height: 15px !important;
+    }
+
+    .RoomTagsList {
+        margin-bottom: 40px;
+    }
+  }
+
+  @media screen and (max-width: 426px) {
+
+    .RoomTagsList {
+        flex-wrap: wrap;
+        height: 60px;
+    }
+
+    .HostDiv {
+        top: 175px;
+    }
+
+    .RoomTitle {
+        font-size: 16px;
+        width: 400px;
+        text-overflow: clip;
     }
   }

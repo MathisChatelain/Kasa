@@ -17,9 +17,9 @@ function Room() {
   const stars = []
   for (var index = 1; index<=5; index++) {
     if (index <= currentRoom.rating) {
-      stars.push(<img key={index} src={Star} alt='' style={{height: "30px", width: "30px",paddingLeft: "10px"}}/>)
+      stars.push(<img className='RoomStars' key={index} src={Star} alt='' style={{height: "30px", width: "30px",paddingLeft: "10px"}}/>)
     } else {
-      stars.push(<img key={index} src={Star} alt='' style={{height: "30px", width: "30px" ,filter: "grayscale(1) brightness(2.5)", paddingLeft: "10px"}}/>)
+      stars.push(<img className='RoomStars' key={index} src={Star} alt='' style={{height: "30px", width: "30px" ,filter: "grayscale(1) brightness(2.5)", paddingLeft: "10px"}}/>)
     }
   }
 
